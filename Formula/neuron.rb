@@ -5,20 +5,20 @@
 class Neuron < Formula
   desc "🧠 Your second brain, from the terminal. Obsidian-compatible + AI + MCP."
   homepage "https://github.com/steevin/neuron-cli"
-  version "1.0.12"
+  version "1.0.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/steevin/neuron-cli/releases/download/v1.0.12/neuron_1.0.12_darwin_amd64.tar.gz"
-      sha256 "d6b395d59e74e16a95ec56fe50912a210f7270c3b5f135f46987a17e390c3b17"
+      url "https://github.com/steevin/neuron-cli/releases/download/v1.0.13/neuron_1.0.13_darwin_amd64.tar.gz"
+      sha256 "4ee63e18db1aefff294aa815cd7ac650e165842cf0ee7c8677e58f32a8b5959a"
 
       define_method(:install) do
         bin.install "neuron"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/steevin/neuron-cli/releases/download/v1.0.12/neuron_1.0.12_darwin_arm64.tar.gz"
-      sha256 "7362d095a26e4dbf490c20e4fbbe8ecca12fb59ec2dc4fa409ae6a6bc2f9ad05"
+      url "https://github.com/steevin/neuron-cli/releases/download/v1.0.13/neuron_1.0.13_darwin_arm64.tar.gz"
+      sha256 "0fc303dd5cd59a1209111fe3f8ad9f128a698bc9e75239b7957723f4d5c454ba"
 
       define_method(:install) do
         bin.install "neuron"
@@ -28,15 +28,15 @@ class Neuron < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steevin/neuron-cli/releases/download/v1.0.12/neuron_1.0.12_linux_amd64.tar.gz"
-      sha256 "aba81add75e46cde1bf282dbeac8870bf0c86bd7d1c0b50f919a9dd24dbcd8c9"
+      url "https://github.com/steevin/neuron-cli/releases/download/v1.0.13/neuron_1.0.13_linux_amd64.tar.gz"
+      sha256 "eceef71276fbd75dcdbe0b3ae1fe353f2c43191df2938d20d80e4c2cf1ebae42"
       define_method(:install) do
         bin.install "neuron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/steevin/neuron-cli/releases/download/v1.0.12/neuron_1.0.12_linux_arm64.tar.gz"
-      sha256 "5359ed1fb8d19daf4b4ba6d341c800e6bb2ce9c3ca9333f963cdf353fc795024"
+      url "https://github.com/steevin/neuron-cli/releases/download/v1.0.13/neuron_1.0.13_linux_arm64.tar.gz"
+      sha256 "dffb8ce56a3eaee812af1cb2cd5379a4b960950f1e3b022bea6491173020929c"
       define_method(:install) do
         bin.install "neuron"
       end
