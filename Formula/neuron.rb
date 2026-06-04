@@ -10,7 +10,7 @@ class Neuron < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/steevin/neuron-cli/releases/download/v1.1.0/neuron_1.1.0_darwin_amd64.tar.gz"
-      sha256 "209afeb4688e5f9980ad5103a892d5a258549542c9b9908955d41e2a43ad6f81"
+      sha256 "c812690ff66a90afb9d3780e1f80f9e0666190bcca09dcb7765f15f48a3610ae"
 
       define_method(:install) do
         bin.install "neuron"
@@ -18,7 +18,7 @@ class Neuron < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/steevin/neuron-cli/releases/download/v1.1.0/neuron_1.1.0_darwin_arm64.tar.gz"
-      sha256 "4160cce5c7319d89a52dc6d2d2ff508b01ed5d53e7c7d65e2b6543519791d6e1"
+      sha256 "e5e89d73b2a3c3948beb9fc6d4079118a61d506635b0886fb0771e7aa1e58604"
 
       define_method(:install) do
         bin.install "neuron"
@@ -29,14 +29,14 @@ class Neuron < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/steevin/neuron-cli/releases/download/v1.1.0/neuron_1.1.0_linux_amd64.tar.gz"
-      sha256 "f2f2579582684ed6a976f23aca5c3d14428b3857b0d597c88c0a52fd2d0222e4"
+      sha256 "638a0ba4ad7fd2606eacd455b524add34cbcbeb783c06ee2f2efc1d9bf827507"
       define_method(:install) do
         bin.install "neuron"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/steevin/neuron-cli/releases/download/v1.1.0/neuron_1.1.0_linux_arm64.tar.gz"
-      sha256 "9cb077e4d1d1a69660f26d8262616f2da37cb6d85378996cd5b394e30a7b8fde"
+      sha256 "c4a03fbe434e13a52eebb7e3286963400a2be4460038a4bb853c0d8c8de4a3f0"
       define_method(:install) do
         bin.install "neuron"
       end
